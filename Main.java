@@ -56,9 +56,7 @@ public class Main {
         }
 
         boolean shouldStop = false;
-        while (!shouldStop && currentPlayer.isAlive()){
-            Game.chooseLocation(currentPlayer, shouldStop);
-        }
+        Game.chooseLocation(currentPlayer,shouldStop);
 
 
     }
