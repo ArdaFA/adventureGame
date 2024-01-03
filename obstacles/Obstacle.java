@@ -1,3 +1,6 @@
+package obstacles;
+import play.Player;
+
 public abstract class Obstacle {
 
     private final String name;
@@ -39,20 +42,8 @@ public abstract class Obstacle {
         return victoryCoins;
     }
 
-//
-//    void attack(Characters character){
-//        int newCharacterHealth = character.getHealth() - this.getDamage();
-//        if (newCharacterHealth <= 0){
-//            System.out.println("You are DEAD, GAME OVER");
-//            character.setHealth(0);
-//        }
-//        else {
-//            character.setHealth(newCharacterHealth);
-//            System.out.println("You were attacked by Zombie. Your health is: " + character.getHealth());
-//        }
-//    }
 
-    void attack(Player player){
+    public void attack(Player player){
         int newCharacterHealth = player.getCharacter().getHealth() - this.getDamage();
         if (newCharacterHealth <= 0){
             System.out.println("You are DEAD, GAME OVER");

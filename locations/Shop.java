@@ -1,3 +1,9 @@
+package locations;
+
+import armors.Armor;
+import play.Player;
+import weapons.Weapon;
+
 public class Shop {
 
     public static void buyWeapon(Player currentPlayer, Weapon weapon){

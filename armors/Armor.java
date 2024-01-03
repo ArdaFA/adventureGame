@@ -1,3 +1,5 @@
+package armors;
+
 public abstract class Armor {
 
     private String name;

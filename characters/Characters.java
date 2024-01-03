@@ -1,3 +1,7 @@
+package characters;
+
+import obstacles.Obstacle;
+
 public abstract class Characters {
 
     private final int ID;
@@ -56,7 +60,7 @@ public abstract class Characters {
         this.health = health;
     }
 
-    void attack(Obstacle obstacle){
+    public void attack(Obstacle obstacle){
         int newObstacleHealth = obstacle.getHealth() - this.getDamage();
         if (newObstacleHealth <= 0 ){
             System.out.println(obstacle.getName() + " is DEAD...");
@@ -69,7 +73,7 @@ public abstract class Characters {
         }
     }
 
-    abstract void goSafeHouse();
+    public abstract void goSafeHouse();
 
 }
 

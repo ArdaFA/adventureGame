@@ -1,3 +1,8 @@
+package play;
+
+import armors.Armor;
+import weapons.Weapon;
+
 public class Inventory {
 
     private Weapon weapon;

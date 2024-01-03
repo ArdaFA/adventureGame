@@ -1,6 +1,8 @@
-public class Bear extends Obstacle{
+package obstacles;
 
-    Bear(){
+public class Bear extends Obstacle {
+
+    public Bear(){
         super("Bear",3,7,20,12);
         System.out.println("Bear has been created");
     }

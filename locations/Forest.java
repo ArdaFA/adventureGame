@@ -1,6 +1,10 @@
+package locations;
+import obstacles.Obstacle;
+import obstacles.Vampire;
+
 public class Forest extends Locations {
 
-    Forest(){
+    public Forest(){
         super(new Obstacle[]{new Vampire()}, "Firewood");
     }
 

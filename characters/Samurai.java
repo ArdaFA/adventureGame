@@ -1,4 +1,6 @@
-public class Samurai extends Characters{
+package characters;
+
+public class Samurai extends Characters {
 
     public Samurai() {
         super(1,5,21, false, false, false);
@@ -6,7 +8,7 @@ public class Samurai extends Characters{
     }
 
     @Override
-    void goSafeHouse() {
+    public void goSafeHouse() {
         System.out.println("Your health was: " + this.getHealth());
         System.out.println("samurai resting in traditional Japanese attire");
         setHealth(21);

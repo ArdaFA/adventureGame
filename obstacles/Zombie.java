@@ -1,4 +1,8 @@
-public class Zombie extends Obstacle{
+package obstacles;
+
+import obstacles.Obstacle;
+
+public class Zombie extends Obstacle {
 
     public Zombie() {
         super("Zombie",1,3,10,4);

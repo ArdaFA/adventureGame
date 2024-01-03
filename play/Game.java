@@ -1,3 +1,11 @@
+package play;
+
+import locations.Cave;
+import locations.Forest;
+import locations.Locations;
+import locations.River;
+import weapons.Weapon;
+
 import java.util.Scanner;
 
 public class Game {
@@ -24,12 +32,12 @@ public class Game {
     }
 
     static void goCave(Player currentPlayer) throws InterruptedException {
-        System.out.println("You are going to the darkest Cave in the world... \n" +
+        System.out.println("You are going to the darkest locations.Cave in the world... \n" +
                 "Do you getting anxious?");
         Game.loading();
         System.out.println("Oh NOOO! There are Zombies here!!!!");
         Locations cave = new Cave();
-        System.out.println("You are going to attack the Zombie...");
+        System.out.println("You are going to attack the obstacles.Zombie...");
         Thread.sleep(1000);
         while (cave.getObstacles()[0].getHealth() > 0 && currentPlayer.getCharacter().getHealth() > 0 ){
             currentPlayer.getCharacter().attack(cave.getObstacles()[0]);
@@ -58,7 +66,7 @@ public class Game {
         System.out.println("let's see what you'll find...");
         System.out.println("Oh NOOO! There are Vampires here!!!!");
         Locations forest = new Forest();
-        System.out.println("You are going to attack the Vampire...");
+        System.out.println("You are going to attack the obstacles.Vampire...");
         Thread.sleep(600);
         while (forest.getObstacles()[0].getHealth() > 0 && currentPlayer.getCharacter().getHealth() > 0 ){
             currentPlayer.getCharacter().attack(forest.getObstacles()[0]);

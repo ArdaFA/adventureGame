@@ -1,3 +1,5 @@
+package weapons;
+
 public abstract class Weapon {
 
     private String name;

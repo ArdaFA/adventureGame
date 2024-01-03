@@ -1,5 +1,8 @@
+package locations;
+import obstacles.Obstacle;
+
 public abstract class Locations {
-    // Every location has Obstacle(s) and item
+    // Every location has obstacles.Obstacle(s) and item
     private Obstacle[] obstacles;
     private String itemName;
 

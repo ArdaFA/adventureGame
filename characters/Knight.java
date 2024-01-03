@@ -1,4 +1,6 @@
-public class Knight extends Characters{
+package characters;
+
+public class Knight extends Characters {
 
     public Knight() {
         super(3,8,24, false, false, false);
@@ -6,7 +8,7 @@ public class Knight extends Characters{
     }
 
     @Override
-    void goSafeHouse() {
+    public void goSafeHouse() {
         System.out.println("Your health was: " + this.getHealth());
         System.out.println("the knight returns to the Castle and rests");
         setHealth(24);

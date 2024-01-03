@@ -1,4 +1,6 @@
-public class Rifle extends Weapon{
+package weapons;
+
+public class Rifle extends Weapon {
 
     Rifle(){
         super(3,7,45);
