@@ -38,19 +38,19 @@ public class Main {
             switch (characterSelection){
                 case 1:
                     currentPlayer.setCharacter(new Samurai());
-                    System.out.println(currentPlayer.getPlayerName() + ", you are a japanese characters.Samurai right now!");
+                    System.out.println(currentPlayer.getPlayerName() + ", you are a japanese Samurai right now!");
                     validSelection = true;
                     selectedCharacter = "Samurai";
                     break;
                 case 2:
                     currentPlayer.setCharacter(new Archer());
-                    System.out.println(currentPlayer.getPlayerName() + ", you are a mongolian characters.Archer right now!");
+                    System.out.println(currentPlayer.getPlayerName() + ", you are a mongolian Archer right now!");
                     validSelection = true;
                     selectedCharacter = "Archer";
                     break;
                 case 3:
                     currentPlayer.setCharacter(new Knight());
-                    System.out.println(currentPlayer.getPlayerName() + ", you are a medieval characters.Knight right now!");
+                    System.out.println(currentPlayer.getPlayerName() + ", you are a medieval Knight right now!");
                     validSelection = true;
                     selectedCharacter = "Knight";
                     break;
